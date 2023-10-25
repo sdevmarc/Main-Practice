@@ -1,0 +1,14 @@
+[
+    {
+        "text" : "This is sample text 1",
+        "author" : "Mario"
+    },
+    {
+        "text" : "This is sample text 2",
+        "author" : "The"
+    },
+    {
+        "text" : "This is sample text 3",
+        "author" : "Dev"
+    }
+]

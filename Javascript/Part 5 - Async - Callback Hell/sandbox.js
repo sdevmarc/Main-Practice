@@ -1,4 +1,4 @@
-const getTodos = (testcallback) => {
+const getTodos = (resource, testcallback) => {
     const request = new XMLHttpRequest();
 
     request.addEventListener('readystatechange', () => {
@@ -9,7 +9,7 @@ const getTodos = (testcallback) => {
             testcallback('could not fetch the data', undefined);
         }
     });
-    request.open('GET', 'todos.json');
+    request.open('GET', resource);
     request.send();
 }
 
