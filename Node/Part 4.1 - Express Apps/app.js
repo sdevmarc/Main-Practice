@@ -6,7 +6,7 @@ const app = express()
 
 
 //Connection to DB
-const dbUri = 'mongodb+srv://rouge:1234@nodetest.v2dek1u.mongodb.net/thisistest?retryWrites=true&w=majority'
+const dbUri = 'mongodb+srv://<username>:<password>@nodetest.v2dek1u.mongodb.net/thisistest?retryWrites=true&w=majority'
 mongoose.connect(dbUri)
     .then((result) => {
         console.log('Connected to db!')
