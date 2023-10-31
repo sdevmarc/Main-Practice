@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs')  %>
+<body>
+    <h1>Welcome Home!</h1>
+    <%- include('./partials/nav.ejs')  %>
+    <div class="thecontent">
+        <% if(contents.length> 0) { %>
+            <% contents.forEach(contents=> { %>
+                <p>Username: <%= contents.username %></p>
+                <p>Password: <%= contents.password %></p>
+                <p>Message: <%= contents.message %></p>
+            <% }) %>
+        <% } else { %>
+            <p>No data have been made.</p>
+        <% } %>
+    </div>
+    <%- include('./partials/footer.ejs')  %>
+</body>
+
+</html>
