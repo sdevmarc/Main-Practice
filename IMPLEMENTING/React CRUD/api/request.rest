@@ -1,0 +1,20 @@
+GET http://localhost:3000/todos
+
+###
+
+POST http://localhost:3000/todo/new
+Content-Type: application/json
+
+{
+    "text": "I love Milk"
+}
+
+
+###
+
+DELETE http://localhost:3000/todo/delete/654147bf6b5a69c6121d14bc
+
+###
+
+
+PUT http://localhost:3000/todo/complete/6541384592bccc45ba541947

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --white: #ffffff;
+    --black1: #000000;
+    --black2: #111111;
+    --black3: #222222;
+    --black4: #333333;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background: var(--black4);
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todos {
+    width: 25rem;
+    height: 25rem;
+    background: rgb(25, 25, 39);
+    border-radius: .7rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1rem;
+}
+
+.todo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-radius: .7rem;
+    background: #1a1a1a;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.todo:hover {
+    background: rgb(180, 180, 180);
+}
+
+.todo .checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 0 .5rem;
+    border-radius: .7rem;
+    background: #000;
+    transition: .3s ease;
+}
+
+.todo .delete-todo {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    transform: translate(20%);
+    width: 20px;
+    height: 20px;
+    background: rgb(204, 9, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .7rem;
+}
