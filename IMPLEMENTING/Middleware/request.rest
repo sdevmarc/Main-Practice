@@ -1,0 +1,11 @@
+GET http://localhost:3000/
+
+
+###
+
+GET https://www.facebook.com/
+
+
+###
+
+POST https://chat.openai.com/c/4a68d227-ca81-4718-b490-bbc4678149c1
