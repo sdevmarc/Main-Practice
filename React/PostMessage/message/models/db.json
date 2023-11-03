@@ -1,0 +1,22 @@
+{
+    "contact": [
+        {
+            "id": 1,
+            "to": "hed-mesuarez@smu.edu.ph",
+            "from": "suanieeee@yahoo.com",
+            "message": "Hello, You have passed the exam!"
+        },
+        {
+            "id": 2,
+            "to": "suanieeee@yahoo.com",
+            "from": "hed-mesuarez@smu.edu.ph",
+            "message": "Wow, How is my performance?"
+        },
+        {
+            "id": 3,
+            "to": "hed-mesuarez@smu.edu.ph",
+            "from": "suanieeee@yahoo.com",
+            "message": "It was very nice performance."
+        }
+    ]
+}

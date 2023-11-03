@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    color: var(--black3);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --white1: #ffffff;
+    --white2: #eeeeee;
+    --white3: rgb(233, 233, 233);
+    --black1: #000000;
+    --black2: #111111;
+    --black3: #222222;
+    --black4: #333333;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.Home {
+    width: 100%;
+    height: 100vh;
+    background: var(--white3);
+}
+
+.Home .contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 35rem;
+    height: 30rem;
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+form input {
+    width: 30rem;
+    height: 2rem;
+}
+
+form textarea {
+    width: 30rem;
+    height: 8rem;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-radius: .4rem;
+    padding: 1rem;
+    background: var(--white2);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: .5s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    background: var(--white1);
+    outline: none;
+    border: none;
+}
+
+form label {
+    color: var(--black4);
+}
+
+form button {
+    width: 30rem;
+    height: 2rem;
+    border: none;
+    border-radius: .4rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background: rgb(68, 68, 243);
+    color: var(--white1);
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+form button:hover {
+    background: rgba(104, 104, 253, 0.993);
+    scale: 0.98;
+}
