@@ -1,0 +1,11 @@
+{
+  "name": "loginvite",
+  "version": "0.0.1",
+  "description": "Login vite",
+  "main": "server.js",
+  "scripts": {
+    "start":"nodemon"
+  },
+  "author": "",
+  "license": "ISC"
+}
