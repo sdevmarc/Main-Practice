@@ -1,0 +1,11 @@
+POST http://localhost:3001/new
+Content-Type: application/json
+
+{
+    "message":"Superidol de xiaorong"
+}
+
+###
+
+
+GET http://localhost:3001
