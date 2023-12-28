@@ -1,0 +1,8 @@
+.catheader {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem 1rem;
+}

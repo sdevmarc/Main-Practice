@@ -1,0 +1,130 @@
+@import '../../index.css';
+
+/* TOP */
+.header {
+    width: 100%;
+    height: 22vh;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 10rem;
+    border: 1px solid #c1c1c1;
+    /* box-shadow: 0 6px 15px -3px rgba(0,0,0,0.1); */
+}
+
+.header .top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .top .logo img {
+    width: 7rem;
+}
+
+.header .navs {
+    margin-left: 12rem;
+}
+
+.header .top .navs a {
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: .3s ease;
+}
+
+.header .top .global {
+    display: flex;
+    align-items: center;
+}
+
+.header .top .home,
+.header .top .global{
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: .3s ease;
+}
+
+.header .top .navs a:hover,
+.header .top .home:hover,
+.header .top .global:hover,
+.header .top .hamburger:hover {
+    background: #f1f1f1fe;
+}
+
+.header .top .right {
+    display: flex;
+    align-items: center;
+    gap: .2em;
+}
+
+.header .top .global,
+.header .top .home {
+    cursor: pointer;
+}
+
+.header .top .hamburger {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header .global svg {
+    scale: 1.3;
+}
+
+.header .top .right .profile {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 50%;
+    background: #000;
+    overflow: hidden;
+}
+
+.header .top .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .top .hamburger {
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--black);
+}
+
+/* TOP */
+
+/* BOTTOM */
+.header .bottom {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: .4rem;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0 6px 15px -3px #dedede;
+}
+
+.header .bottom input {
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+
+.header .bottom .title {
+    font-size: 13px;
+    font-weight: 500;
+}
+/* BOTTOM */
