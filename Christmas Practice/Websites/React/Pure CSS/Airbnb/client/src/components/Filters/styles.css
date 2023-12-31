@@ -1,0 +1,21 @@
+.filters {
+    cursor: pointer;
+    width: 7rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid #979797;
+    border-radius: 1rem;
+}
+
+.filters svg {
+    margin-top: .3rem;
+    scale: 1.5;
+}
+
+.filters .title {
+    font-size: 13px;
+    font-weight: 500;
+}

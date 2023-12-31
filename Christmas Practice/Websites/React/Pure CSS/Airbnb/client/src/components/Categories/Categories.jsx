@@ -1,5 +1,22 @@
 import React from 'react'
 import './styles.css'
+import { FaUmbrellaBeach } from "react-icons/fa";
+import { MdOutlineRoomService } from "react-icons/md";
+import { GiFarmTractor } from "react-icons/gi";
+import { IoBoatSharp } from "react-icons/io5";
+import { IoBed } from "react-icons/io5";
+import { MdOutlinePool } from "react-icons/md";
+import { FaUsersViewfinder } from "react-icons/fa6";
+import { BsTropicalStorm } from "react-icons/bs";
+import { MdHouseboat } from "react-icons/md";
+import { MdCabin } from "react-icons/md";
+import { IoIosHome } from "react-icons/io";
+import { GiTreehouse } from "react-icons/gi";
+import { GiMushroomGills } from "react-icons/gi";
+import { FaSkiing } from "react-icons/fa";
+import { GiForestCamp } from "react-icons/gi";
+import { FaArrowTrendDown } from "react-icons/fa6";
+import { GiFrontalLobe } from "react-icons/gi";
 
 const Categories = () => {
     return (
@@ -7,7 +24,55 @@ const Categories = () => {
             <div className="slider">
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <FaUmbrellaBeach />
+                    </div>
+                    <div className="title">
+                        Beachfront
+                    </div>
+                </div>
+                <div className="slides">
+                    <div className="image">
+                        <MdOutlineRoomService />
+                    </div>
+                    <div className="title">
+                        Rooms
+                    </div>
+                </div>
+                <div className="slides">
+                    <div className="image">
+                        <GiFarmTractor />
+                    </div>
+                    <div className="title">
+                        Farms
+                    </div>
+                </div>
+                <div className="slides">
+                    <div className="image">
+                        <IoBoatSharp />
+                    </div>
+                    <div className="title">
+                        Boats
+                    </div>
+                </div>
+                <div className="slides">
+                    <div className="image">
+                        <IoBed />
+                    </div>
+                    <div className="title">
+                        Bed & Breakfasts
+                    </div>
+                </div>
+                <div className="slides">
+                    <div className="image">
+                        <MdOutlinePool />
+                    </div>
+                    <div className="title">
+                        Amazing pools
+                    </div>
+                </div>
+                <div className="slides">
+                    <div className="image">
+                        <FaUsersViewfinder />
                     </div>
                     <div className="title">
                         Amazing views
@@ -15,172 +80,84 @@ const Categories = () => {
                 </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <BsTropicalStorm />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Tropical
                     </div>
                 </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <MdHouseboat />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Houseboats
                     </div>
                 </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <MdCabin />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Cabins
                     </div>
                 </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <IoIosHome />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Tiny homes
                     </div>
                 </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <GiTreehouse />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Treehouses
                     </div>
                 </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <GiMushroomGills />
                     </div>
                     <div className="title">
-                        Amazing views
+                        OMG!
                     </div>
-                </div>  
+                </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <FaSkiing />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Skiing
                     </div>
-                </div>  
+                </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <GiForestCamp />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Camping
                     </div>
-                </div>  
+                </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <FaArrowTrendDown />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Trending
                     </div>
-                </div>  
+                </div>
                 <div className="slides">
                     <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
+                        <GiFrontalLobe />
                     </div>
                     <div className="title">
-                        Amazing views
+                        Lakefront
                     </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
-                <div className="slides">
-                    <div className="image">
-                        <img src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk" alt="" />
-                    </div>
-                    <div className="title">
-                        Amazing views
-                    </div>
-                </div>  
+                </div>
             </div>
         </div>
     )

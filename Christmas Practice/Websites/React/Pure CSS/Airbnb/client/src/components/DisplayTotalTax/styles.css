@@ -1,0 +1,21 @@
+.displaytax {
+    cursor: pointer;
+    width: 14rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid #979797;
+    border-radius: 1rem;
+}
+
+.displaytax svg {
+    margin-top: .3rem;
+    scale: 2;
+}
+
+.displaytax .title {
+    font-size: 12px;
+    font-weight: 500;
+}

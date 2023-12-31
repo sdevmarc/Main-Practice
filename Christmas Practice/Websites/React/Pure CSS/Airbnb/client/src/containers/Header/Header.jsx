@@ -3,6 +3,7 @@ import './styles.css'
 import { RiGlobalLine } from "react-icons/ri";
 import { IoIosMenu } from "react-icons/io";
 import { Link } from 'react-router-dom'
+import Catheader from '../CatHeader/Catheader';
 
 const Header = () => {
     return (
@@ -13,9 +14,9 @@ const Header = () => {
                 </div>
                 <div className="navs">
                     <nav>
-                        <Link>Stays</Link>
-                        <Link>Experiences</Link>
-                        <Link>Online Experiences</Link>
+                        <Link to='/'>Stays</Link>
+                        <Link to='/'>Experiences</Link>
+                        <Link to='/'>Online Experiences</Link>
                     </nav>
                 </div>
                 <div className="right">
@@ -60,7 +61,7 @@ const Header = () => {
                     <input type="text" placeholder='Add guests' />
                 </div>
             </div>
-
+            <Catheader />
         </div>
     )
 }
