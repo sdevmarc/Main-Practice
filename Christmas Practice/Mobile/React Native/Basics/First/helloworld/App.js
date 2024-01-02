@@ -17,7 +17,12 @@ const App = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Home" component={Home}
+                options={{
+                    title: 'This is Home',
+                    headerTitleAlign: 'center',
+                }}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     );
