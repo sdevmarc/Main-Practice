@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <View style={{ backgroundColor: 'plum' }}>
             {/* <ActivityIndicator size="large" animating={false} /> */}
-            <StatusBar backgroundColor="lightgreen" barStyle="dark-content" />
+            <StatusBar backgroundColor="transparent" barStyle="dark-content" />
             <ScrollView contentContainerStyle={{ flexGrow: 1, alignItems: "center", gap: 40, paddingTop: 50 }}>
 
                 <View style={{ borderRadius: 50, overflow: "hidden" }}>

@@ -18,10 +18,10 @@ const App = () => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name="Home" component={Home}
-                options={{
-                    title: 'This is Home',
-                    headerTitleAlign: 'center',
-                }}
+                    options={{
+                        title: 'This is Home',
+                        headerTitleAlign: 'center'
+                    }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
