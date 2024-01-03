@@ -13,7 +13,7 @@ const Welcome = () => {
                 </Text>
             </View>
             <View>
-                <Image source={{ uri: "https://gradeschool.smu.edu.ph/wp-content/uploads/2021/03/final-logo2.png" }} style={{ width: 200, height: 200 }} />
+                <Image source={{ uri: "https://raw.githubusercontent.com/syednomishah/Login-SignUp-UI-React-Native/main/assets/images/welcome.png" }} style={{ width: 400, height: 400 }} />
             </View>
             <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.TouchableOpac}>
                 <Text style={styles.Text}>Start</Text>
@@ -26,23 +26,23 @@ export default Welcome
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#4071db",
+        backgroundColor: "#333",
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        gap: 40
+        gap: 30
     },
     title: {
-        fontSize: 35,
+        fontSize: 40,
         color: "white",
         fontWeight: "bold",
-        textShadowColor: '#000', // Text shadow color
-        textShadowOffset: {
-            width: 0,
-            height: 5,
-        },
-        textShadowRadius: 4
+        // textShadowColor: '#000', // Text shadow color
+        // textShadowOffset: {
+        //     width: 0,
+        //     height: 5,
+        // },
+        // textShadowRadius: 4
     },
     center: {
         flex: 1,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     },
     TouchableOpac: {
         backgroundColor: "#0cf520",
-        width: 250,
+        width: 350,
         height: 43,
         borderRadius: 10,
         justifyContent: 'center',
