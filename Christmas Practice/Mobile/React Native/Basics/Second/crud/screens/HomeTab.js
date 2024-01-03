@@ -4,18 +4,19 @@ import { BarCodeScanner } from 'expo-barcode-scanner';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Button } from '@rneui/base';
 
-const Home = () => {
+const HomeScreen = () => {
     const [hasPermission, setHasPermission] = useState(false);
     const [scanned, setScanned] = useState(false);
     const [text, setText] = useState('Not yet scanned')
 
-    const askForCameraPermission = () => {(
-        async () => {
-            const { status } = await BarCodeScanner.requestPermissionsAsync();
-            setHasPermission(status === 'granted');
-        }
+    const askForCameraPermission = () => {
+        (
+            async () => {
+                const { status } = await BarCodeScanner.requestPermissionsAsync();
+                setHasPermission(status === 'granted');
+            }
         )
-        ()
+            ()
     }
 
     // Request Camera Permission
@@ -46,6 +47,7 @@ const Home = () => {
     }
 
     return (
+        <SafeAreaView style={{ flex: 1, backgroundColor: "#111" }}>
             <View style={styles.container}>
                 <View style={styles.barcodebox}>
                     <BarCodeScanner
@@ -56,21 +58,22 @@ const Home = () => {
 
                 {scanned && <Button title={'Scan again?'} onPress={() => setScanned(false)} color='tomato' />}
             </View>
+        </SafeAreaView>
     )
 }
 
-export default Home
+export default HomeScreen
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#fff",
         justifyContent: "center",
         alignItems: "center"
     },
     maintext: {
         fontSize: 16,
         margin: 20,
+        color: "white"
     },
     barcodebox: {
         alignItems: 'center',
