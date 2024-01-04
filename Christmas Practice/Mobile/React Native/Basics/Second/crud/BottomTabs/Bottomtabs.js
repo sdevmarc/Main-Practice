@@ -5,6 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import HomeTab from '../screens/HomeTab';
 
 const Tab = createBottomTabNavigator();
+
 const homeName = 'HomeTab'
 const settingsName = 'Settings'
 
