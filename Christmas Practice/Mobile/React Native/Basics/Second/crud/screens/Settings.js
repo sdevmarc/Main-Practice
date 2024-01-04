@@ -1,10 +1,26 @@
 import { useNavigation } from '@react-navigation/native'
-import { View, Text, StyleSheet, TextInput, Button } from 'react-native'
+import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native'
 import { SafeAreaView } from "react-native-safe-area-context"
-
+import axios from 'axios'
+import { useState } from 'react'
 
 const Settings = () => {
     const navigation = useNavigation()
+    const [values, setValues] = useState({
+        title: '',
+        author: '',
+    })
+
+
+    const addData = () => {
+        axios.post('http://192.168.1.11:3000/posts', values)
+            .then(() => {
+                Alert.alert("Yay!", "You have submitted successfully!")
+                setValues({ title: '', author: '' });
+            })
+            .catch(e => Alert.alert('Error', `${e.message}`))
+    }
+
 
     return (
         <SafeAreaView style={styles.container}>
@@ -16,13 +32,23 @@ const Settings = () => {
             <View style={styles.textForm}>
                 <View style={styles.TextField}>
                     <Text style={styles.textTitle}>Title</Text>
-                    <TextInput placeholder='Enter the title' style={styles.Input}></TextInput>
+                    <TextInput
+                        placeholder='Enter the title'
+                        style={styles.Input}
+                        value={values.title}
+                        onChangeText={text => setValues({ ...values, title: text })}
+                    ></TextInput>
                 </View>
                 <View style={styles.TextField}>
                     <Text style={styles.textTitle}>Author</Text>
-                    <TextInput placeholder='Enter the Author' style={styles.Input}></TextInput>
+                    <TextInput
+                        placeholder='Enter the Author'
+                        style={styles.Input}
+                        value={values.author}
+                        onChangeText={text => setValues({ ...values, author: text })}
+                    ></TextInput>
                 </View>
-                <Button title='Submit' />
+                <Button title='Submit' onPress={addData} />
             </View>
         </SafeAreaView>
     )

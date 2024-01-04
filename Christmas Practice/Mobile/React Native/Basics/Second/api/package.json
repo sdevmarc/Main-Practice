@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"json-server -w db.json",
+    "start":"json-server -w db.json --host 192.168.1.11 --port 3000",
     "tunnel":"ngrok http 3000"
   },
   "author": "",
