@@ -19,7 +19,7 @@ function StackRoutes() {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name="Welcome" component={Welcome} options={{ headerShown: false }} />
-                <Stack.Screen name="Home" component={TabsRoutes} options={{ headerShown: false }} />
+                <Stack.Screen name="Home" component={TabsRoutes} options={{ headerShown: false}} />
             </Stack.Navigator>
         </NavigationContainer>
     );

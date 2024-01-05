@@ -1,15 +1,18 @@
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, ImageBackground, Image, StatusBar  } from 'react-native'
 
 const Home = () => {
   return (
-    <SafeAreaView style={styles.SafeView}>
-        <View style={styles.container}>
-            <Text>
-                Home
-            </Text>
-        </View>
-    </SafeAreaView>
+    <>
+      <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
+      <View style={styles.SafeView}>
+
+        <ImageBackground source={{ uri: "http://source.unsplash.com/woman-in-yellow-tracksuit-standing-on-basketball-court-side-nimElTcTNyY" }} style={{ width: "100%", height: "100%" }}>
+          <Image source={{ uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zara_Logo.svg/2560px-Zara_Logo.svg.png" }} style={styles.logo} />
+        </ImageBackground>
+      </View>
+    </>
+
   )
 }
 
@@ -17,13 +20,14 @@ export default Home
 
 const styles = StyleSheet.create({
   SafeView: {
-      flex: 1,
-      backgroundColor: "plum"
+    flex: 1
   },
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+  logo: {
+    width: 350, // Adjust the width as needed
+    height: 150,
+    alignSelf: 'center',
+    marginTop: 50
+
   }
 
 })
