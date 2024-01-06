@@ -18,7 +18,7 @@ const TAB_DELETE = 'DeleteTab'
 const TabsRoutes = () => {
     return (
         <>
-            <StatusBar barStyle="light-content"/>
+            
             <Tab.Navigator
                 initialRouteName={TAB_HOME}
                 screenOptions={({ route }) => ({
