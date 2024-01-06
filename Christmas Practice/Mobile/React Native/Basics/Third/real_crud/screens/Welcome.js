@@ -8,8 +8,8 @@ const Welcome = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            navigation.replace('Home'); // Replace with the screen you want to navigate to after splash
-        }, 3000); // Adjust the duration (in milliseconds) as needed
+            navigation.replace('Home');
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, [navigation]);
