@@ -36,7 +36,7 @@ const CreateTab = () => {
             const newProducts = [...products, newProduct];
             const filePath = getFilePath();
 
-            // Write the updated array to the file
+            
             await FileSystem.writeAsStringAsync(filePath, JSON.stringify(newProducts), {
                 encoding: FileSystem.EncodingType.UTF8,
             });
